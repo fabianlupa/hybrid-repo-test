@@ -4,6 +4,8 @@ on:
         branches:
             - cloud
             - onpremise
+permissions:
+    contents: write
 jobs:
   commit-to-main:
     runs-on: ubuntu-latest
