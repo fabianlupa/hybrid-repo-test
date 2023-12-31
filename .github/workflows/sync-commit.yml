@@ -1,0 +1,15 @@
+name: Sync commits
+on:
+    push:
+        branches:
+            - cloud
+            - onpremise
+jobs:
+  commit-to-main:
+    runs-on: ubuntu-latest
+    steps:
+        - name: Checkout repository
+          uses: actions/checkout@v4
+        
+        - name: Commit main
+          run: git merge main && git push main
