@@ -15,5 +15,5 @@ jobs:
           run: |
             git config user.name github-actions
             git config user.email github-actions@github.com
-            git fetch main
-            git merge main && git push main
+            git fetch origin main
+            git merge main && git push origin main
